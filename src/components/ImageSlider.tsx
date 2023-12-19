@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-const ImageSlider = ({ images }) => {
+interface ImageSliderProps {
+  images: string;
+}
+
+const ImageSlider = ({ images }: ImageSliderProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
