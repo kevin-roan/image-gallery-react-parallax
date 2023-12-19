@@ -1,14 +1,11 @@
-import { useRef } from "react";
 import { TextTyper, ImageSlider } from "./components";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./App.css";
 
 function App() {
-  const ref = useRef();
-
   return (
     <div>
-      <Parallax pages={4} ref={ref}>
+      <Parallax pages={4}>
         <ParallaxLayer
           offset={0}
           speed={1}
@@ -35,16 +32,12 @@ function App() {
           <ImageSlider images={images} />
         </ParallaxLayer>
 
-        <ParallaxLayer
-          offset={0.2}
-          speed={0.05}
-          onClick={() => ref.current.scrollTo(3)}
-        >
+        <ParallaxLayer offset={0.2} speed={0.05}>
           <div className="greeting_contianer">
             <TextTyper />
           </div>
         </ParallaxLayer>
-      </Parallax>{" "}
+      </Parallax>
     </div>
   );
 }
