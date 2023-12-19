@@ -1,0 +1,24 @@
+.image-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  @media screen and (max-width: 850px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  img {
+    height: 30vmax;
+    border-radius: 10px;
+    &:hover {
+      transition: ease-in-out 0.3s;
+      transform: scale(1.03);
+    }
+  }
+  button {
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 10px;
+  }
+}

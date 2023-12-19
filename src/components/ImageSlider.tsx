@@ -1,7 +1,9 @@
 import { useState } from "react";
+import "./ImageSlider.css";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 interface ImageSliderProps {
-  images: string;
+  images: string[];
 }
 
 const ImageSlider = ({ images }: ImageSliderProps) => {
@@ -19,12 +21,16 @@ const ImageSlider = ({ images }: ImageSliderProps) => {
 
   return (
     <div className="image-slider">
-      <button onClick={prevImage}>Previous</button>
+      <button onClick={prevImage}>
+        <FaArrowLeft />
+      </button>
       <img
         src={images[currentImageIndex]}
         alt={`Slide ${currentImageIndex + 1}`}
       />
-      <button onClick={nextImage}>Next</button>
+      <button onClick={nextImage}>
+        <FaArrowRight />
+      </button>
     </div>
   );
 };
