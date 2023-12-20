@@ -4,11 +4,8 @@ const TextTyper = () => {
   return (
     <TypeAnimation
       sequence={[
-        "Welcome ",
-        1000,
-        "To",
         2000,
-        "React Parallax Image Gallery",
+        "Space Gallery",
         () => {
           console.log("Sequence completed");
         },
@@ -17,7 +14,7 @@ const TextTyper = () => {
       cursor={true}
       repeat={Infinity}
       style={{
-        fontSize: "10rem",
+        fontSize: "4vmax",
         display: "inline-block",
         color: "white",
         padding: "2rem",

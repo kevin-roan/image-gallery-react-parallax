@@ -1,5 +1,5 @@
 :root {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Rubik Doodle Shadow", sans-serif;
 }
 
 * {
@@ -10,14 +10,14 @@
 body {
   background-color: black;
 }
-h2 {
-  font-size: 100px;
-  text-align: center;
-  color: red;
-}
 
 .greeting_contianer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.imageslider_contianer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
