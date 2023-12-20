@@ -4,7 +4,7 @@ import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
 
 const MAX_VISIBILITY = 3;
 
-const Card = ({ title, content, imageUrl }) => (
+const Card = ({ title, imageUrl }) => (
   <div className="card">
     <h2>{title}</h2>
     <img src={imageUrl} alt={title} />
@@ -47,15 +47,7 @@ const Carousel = ({ children }) => {
   );
 };
 
-const ImageSliderCard = () => {
-  const images = [
-    "https://images.pexels.com/photos/220201/pexels-photo-220201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "https://images.pexels.com/photos/207529/pexels-photo-207529.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/813269/pexels-photo-813269.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/3805983/pexels-photo-3805983.jpeg?auto=compress&cs=tinysrgb&w=600",
-  ];
-
+const ImageSliderCard = ({ images }) => {
   return (
     <div className="app">
       <Carousel>

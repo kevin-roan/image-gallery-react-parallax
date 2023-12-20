@@ -1,3 +1,4 @@
+import React from "react";
 import { TextTyper, ImageSliderCard, VantaClouds } from "./components";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./App.css";
@@ -27,7 +28,7 @@ function App() {
           }}
         >
           <div className="imageslider_contianer">
-            <ImageSliderCard />
+            <ImageSliderCard images={images} />
           </div>
         </ParallaxLayer>
       </Parallax>
@@ -36,3 +37,11 @@ function App() {
 }
 
 export default App;
+
+const images = [
+  "https://images.pexels.com/photos/220201/pexels-photo-220201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "https://images.pexels.com/photos/207529/pexels-photo-207529.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "https://images.pexels.com/photos/813269/pexels-photo-813269.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "https://images.pexels.com/photos/3805983/pexels-photo-3805983.jpeg?auto=compress&cs=tinysrgb&w=600",
+];
